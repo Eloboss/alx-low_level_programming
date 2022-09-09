@@ -12,8 +12,9 @@ int e;
 for (e = 0; e <= 9; e++)
 {
 putchar(e);
-}
-putchar(' ');
 putchar(',');
+putchar(' ');
+}
+putchar('\n');
 return (0);
 }
