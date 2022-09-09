@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int e;
-int p;
+char e;
+char p;
 for (e = 0; e <= 9; e++)
 {
 putchar(e);
