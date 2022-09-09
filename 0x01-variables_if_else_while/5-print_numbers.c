@@ -12,7 +12,8 @@ int e;
 e = 0;
 while (e < 10)
 {
-printf("%d\n", e++);
+printf("%d", e++);
 }
+printf("\n");
 return (0);
 }
