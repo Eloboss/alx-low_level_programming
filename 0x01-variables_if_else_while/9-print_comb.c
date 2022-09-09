@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-char e;
-for (e = 0; e <= 9; e++)
+int e;
+for (e = 48; e <= 57; e++)
 {
 putchar(e);
 putchar(',');
