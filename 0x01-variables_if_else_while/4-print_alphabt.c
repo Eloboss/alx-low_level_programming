@@ -8,13 +8,12 @@
  */
 int main(void)
 {
-char elo;
-for (elo = 'a'; elo <= 'z'; elo++)
+char e;
+for (e = 'a'; e <= 'z'; e++)
 {
-if (elo = 'q' || elo = 'e')
+if (e != 'q' || e != 'e')
 {
-continue;
-putchar(elo);
+putchar(e);
 }
 }
 putchar('\n');
