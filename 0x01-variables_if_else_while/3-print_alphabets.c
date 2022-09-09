@@ -9,10 +9,14 @@
 int main(void)
 {
 char e;
+char p;
 for (e = 'a'; e <= 'z'; e++)
 {
 putchar(e)
-putchar(to(upper(e))
+}
+for (p = 'A'; p = 'Z'; p++)
+{
+putchar(p)
 }
 putchar('\n');
 return (0);
