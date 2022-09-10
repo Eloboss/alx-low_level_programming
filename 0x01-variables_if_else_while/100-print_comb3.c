@@ -14,7 +14,8 @@ for (e = 48; e <= 56; e++)
 {
 for (p = 49; p <= 57; p++)
 {
-putchar(e, p);
+putchar(e};
+putchar(p);
 if ((e != 56) && (p != 57))
 {
 putchar(',');
