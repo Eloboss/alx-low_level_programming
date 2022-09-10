@@ -13,15 +13,16 @@ int main(void)
 {
 int e;
 int p;
-for (e = 48; e <= 56; e++)
+for (e = 48; e < 57; e++)
 {
-for (p = 49; p <= 57; p++)
+for (p = 49; p < 58; p++)
 {
 if (e != p && p > e)
 {
 putchar(e);
 putchar(p);
 putchar(',');
+putchar(' ');
 }
 }
 }
