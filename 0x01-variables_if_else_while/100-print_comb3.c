@@ -14,12 +14,11 @@ for (e = 48; e <= 56; e++)
 {
 for (p = 49; p <= 57; p++)
 {
-putchar(e);
-putchar(p);
 if (e != p && p > e)
 {
+putchar(e);
+putchar(p);
 putchar(',');
-putchar(' ');
 }
 }
 }
