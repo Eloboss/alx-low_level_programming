@@ -21,6 +21,8 @@ if (e != p && p > e)
 {
 putchar(e);
 putchar(p);
+if (e != 56 || p !=57)
+{
 putchar(',');
 putchar(' ');
 }
