@@ -20,13 +20,16 @@ for (j = 49; j < 57; j++)
 {
 for (k = 50; k < 58; k++)
 {
-if ((i != j != k) && (k > j > i))
+if (k > j && j > i)
 {
 putchar(i);
 putchar(j);
 putchar(k);
+if (i != 55 || j != 56)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
