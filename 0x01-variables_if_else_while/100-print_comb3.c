@@ -16,7 +16,7 @@ for (p = 49; p <= 57; p++)
 {
 putchar(e);
 putchar(p);
-if ((e != p) && (p > e))
+if (e != p && p > e)
 {
 putchar(',');
 putchar(' ');
