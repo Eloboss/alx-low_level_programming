@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer- Prints a clock
- * 
- * 
+ *
+ *
  */
 void jack_bauer(void)
 {
