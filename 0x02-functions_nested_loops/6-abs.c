@@ -9,15 +9,11 @@ int _abs(int n)
 {
 if (n >= 1)
 {
-_putchar(n + '0');
-}
-else if (n < 1 && n != 0)
-{
-_putchar((n*=-1) + '0');
+return (n);
 }
 else
 {
-_putchar(48);
+n *= -1;
+return (n);
 }
-return (0);
 }
