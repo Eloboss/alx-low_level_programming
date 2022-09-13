@@ -2,8 +2,8 @@
 /**
  * _islower- Detects lowercase letters
  *
- *
- *  Return: Always 0 on success
+ *@c: The integer to b compared with ASCIi
+ * Return: Always 0 on success
  */
 int _islower(int c)
 {
