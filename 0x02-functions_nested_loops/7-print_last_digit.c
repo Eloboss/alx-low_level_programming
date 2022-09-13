@@ -12,13 +12,9 @@ if (n >= 0 && n <= 9)
 {
 return (n);
 }
-else if (n < 0)
-{
-n *= -1;
-return (n % 10);
-}
 else
 {
+n = abs(n);
 return (n % 10);
 }
 }
