@@ -6,11 +6,13 @@
  *  Return: Always 0 on success
  */
 int _islower(int c)
+{
 if (c > 96 && c < 113)
 {
-_putchar(49);
+return (0);
 else
 {
-_putchar(48);
+return (1);
+}
 }
 }
