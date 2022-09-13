@@ -5,7 +5,9 @@
  *
  * Return: Always return 0 on success
  */
-void print_alphabet(void);
+int main(void)
 {
 _putchar('_putchar');
+_putchar('\n');
+return (0);
 }
