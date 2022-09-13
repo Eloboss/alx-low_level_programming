@@ -12,9 +12,13 @@ if (n >= 0 && n <= 9)
 {
 return (n);
 }
+else if (n < 0)
+{
+n *= -1;
+return (n % 10);
+}
 else
 {
-n = _abs(n % 10);
-return (n);
+return (n % 10);
 }
 }
