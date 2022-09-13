@@ -17,9 +17,9 @@ while (n > 98)
 {
 printf("%d, ", n);
 n--;
-printf("\n);
+printf("\n");
 }
-while (n = 98)
+while (n == 98)
 {
 printf("%d", n);
 printf("\n");
