@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * -islower- Detects lowercase letters
+ * _islower- Detects lowercase letters
  *
  *
  *  Return: Always 0 on success
