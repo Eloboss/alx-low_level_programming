@@ -10,18 +10,18 @@ int print_last_digit(int n)
 {
 if (n >= 0 && n <= 9)
 {
-return (n);
+_putchar(n + '0');
 return (n);
 }
 else if (n > 9)
 {
-return (n % 10);
+_putchar((n % 10) + '0');
 return (n % 10);
 }
 else
 {
 n *= -1;
-return (n % 10);
+_putchar((n % 10) + '0');
 return (n % 10);
 }
 }
