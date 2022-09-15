@@ -6,8 +6,8 @@
  */
 void more_numbers(void)
 {
-int e;
-int p;
+char e;
+char p;
 for (e >= 0; e <= 9; e++)
 {
 for (p >= 48; p<= 72; p++)
