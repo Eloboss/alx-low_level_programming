@@ -13,12 +13,11 @@ while (e <= n)
 {
 _putchar(' ');
 _putchar(92);
+_putchar('\n');
 e++;
 }
 else
 {
-_putchar('\n');
-}
 _putchar('\n');
 }
 }
