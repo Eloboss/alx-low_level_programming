@@ -6,8 +6,8 @@
  */
 void print_most_numbers(void)
 {
-int c;
-for (c <= 48 && c <= 57)
+char c;
+for (c = 48 && c <= 57)
 {
 if (c == 50 || c == 52)
 {
