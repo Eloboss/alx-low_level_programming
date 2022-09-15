@@ -11,6 +11,7 @@ e = 48;
 while (e < 58)
 {
 _putchar(e);
+e++;
 }
 _putchar('\n');
 }
