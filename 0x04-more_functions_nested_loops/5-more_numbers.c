@@ -4,10 +4,11 @@
  * more_numbers- print 0 to 14 ten times
  *
  */
+
 void more_numbers(void)
 {
-int e;
-int p;
+char e;
+char p;
 for (e = 0; e < 9; e++)
 {
 for (p = 0; p < 15; p++)
