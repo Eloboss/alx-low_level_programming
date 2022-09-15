@@ -7,11 +7,9 @@
 void print_numbers(void)
 {
 int p;
-p = 48;
-while (p < 58)
+for (p >= 48; p <= 57; e++)
 {
 _putchar(p);
-p++;
 }
 _putchar('\n');
 }
