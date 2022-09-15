@@ -14,7 +14,7 @@ for (p >= 48; p<= 72; p++)
 {
 _putchar(p);
 }
-_putchar('\n)
+_putchar('\n');
 return (0);
 }
 }
