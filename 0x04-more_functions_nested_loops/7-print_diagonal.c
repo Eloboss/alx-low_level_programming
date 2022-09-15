@@ -15,6 +15,10 @@ _putchar(' ');
 _putchar(92);
 e++;
 }
+else
+{
+_putchar('\n');
+}
 _putchar('\n');
 }
 }
