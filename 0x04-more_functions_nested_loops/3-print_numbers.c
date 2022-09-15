@@ -6,12 +6,12 @@
 
 void print_numbers(void)
 {
-int e;
-e = 48;
-while (e < 58)
+int p;
+p = 48;
+while (p < 58)
 {
-_putchar(e);
-e++;
+_putchar(p);
+p++;
 }
 _putchar('\n');
 }
