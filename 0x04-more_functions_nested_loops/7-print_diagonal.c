@@ -2,6 +2,7 @@
 
 /**
  * print_diagonal- Print diagonal
+ * @n: Number to b used
  */
 
 void print_diagonal(int n)
