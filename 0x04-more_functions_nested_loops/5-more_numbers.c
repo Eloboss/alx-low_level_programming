@@ -7,20 +7,21 @@
 
 void more_numbers(void)
 {
-char e;
-char p;
-for (e = 0; e < 9; e++)
-{
-for (p = 0; p < 15; p++)
-{
-if (p >= 10)
-{
-_putchar(p / 10 + '0');
-}
-_putchar(p % 10 + '0');
-}
-_putchar('\n');
-}
+	int i, j;
 
-}
+	i = 0;
 
+	while (i < 10)
+	{
+		for (j = 0; j < 15; j++)
+		{
+			if (j >= 10)
+			{
+				_putchar((j / 10) + 48);
+			}
+			_putchar((j % 10) + 48);
+		}
+
+		_putchar('\n');
+	i++;
+}
