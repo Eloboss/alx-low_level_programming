@@ -5,7 +5,7 @@
  * @size: number to b used
  */
 
-void print_square(int size);
+void print_square(int size)
 {
 	int i = 0, j;
 
