@@ -6,8 +6,8 @@
  * @b: Mumber to b evaluated
  */
 
-void swap_int(int *a, int *b)
+void swap_int(int *a, int *b){
 {
-	*a = *b;
+	a = b;
 	*b = *a;
 }
