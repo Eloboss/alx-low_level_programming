@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,6 +11,6 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	for ( ; a[i] != '\0'; i++)
+	for ( ; strlen a[i] <= n; i++)
 		printf("%d, ", a[i]);
 }
