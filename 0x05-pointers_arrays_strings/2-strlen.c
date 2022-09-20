@@ -9,7 +9,7 @@
 
 int _strlen(char *s)
 {
-	int e;
+	unsigned int e;
 
 	e = 0;
 
