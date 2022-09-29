@@ -17,6 +17,7 @@ int helper(int a, int b)
 		return (helper(a, b + 1));
 
 	return (1);
+
 }
 /**
  * _sqrt_recursion- Finds d square of a number
@@ -26,8 +27,6 @@ int helper(int a, int b)
  * Return: Always 0
  */
 int _sqrt_recursion(int n)
-{
-        int _sqrt_recursion(int n)
 {
         if (n == 0)
                 return (0);
