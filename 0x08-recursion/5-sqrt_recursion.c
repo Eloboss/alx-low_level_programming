@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * helper - Finds the square root of two numbers
  * @a: The number
@@ -19,7 +18,6 @@ int helper(int a, int b)
 
 	return (1);
 }
-
 /**
  * _sqrt_recursion- Finds d square of a number
  *
@@ -27,7 +25,6 @@ int helper(int a, int b)
  *
  * Return: Always 0
  */
-
 int _sqrt_recursion(int n)
 {
         int _sqrt_recursion(int n)
