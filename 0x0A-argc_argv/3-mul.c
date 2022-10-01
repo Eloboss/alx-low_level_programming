@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	e = atoi(argv[1]);
+	p = atoi(argv[2]);
 	answer = e * p;
-	printf("%d\n", answer);
+	printf("%i\n", answer);
 }
