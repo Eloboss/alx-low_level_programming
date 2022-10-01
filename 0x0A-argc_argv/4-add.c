@@ -21,11 +21,9 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-		if (!isdigit(argv[i])
-				{
-				printf("Error\n");
+		if (!isdigit(argv[i]))
+			printf("Error\n");
 				return (1);
-				}
 		}
 		sum += atoi(argv[i]);
 	}
