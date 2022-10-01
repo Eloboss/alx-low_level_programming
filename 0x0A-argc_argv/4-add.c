@@ -4,12 +4,11 @@
 #include <ctype.h>
 
 /**
- * main- To add numbers
- * @argc: Argument counts
- * @argv: Argument vectors
- *
- * Return: Always 0
- 
+ * main - main funct
+ * @argc: param count
+ * @argv: param poiter
+ * Return: int
+ */
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
@@ -30,5 +29,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
-
