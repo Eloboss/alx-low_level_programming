@@ -4,7 +4,7 @@
 
 /**
  * leet- Encodes string ino 1337
- * @e: String to b encoded
+ * @s: String to b encoded
  *
  * Return: Always 0
  */
@@ -32,4 +32,4 @@ char *leet(char *s)
 		stringCount++;
 	}
 	return (s);
-}	
+}
