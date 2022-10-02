@@ -2,12 +2,12 @@
 
 /**
  * rot13- Encodes string to rot 13
- * @e: String to b catenated
+ * @s: String to b catenated
  *
  * Return: Always 0
  */
 
-char *rot13(char *e)
+char *rot13(char *s)
 {
 	int stringCount, rotation;
 	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
@@ -33,4 +33,4 @@ char *rot13(char *e)
 		}
 	}
 	return (s);
-}	
+}
