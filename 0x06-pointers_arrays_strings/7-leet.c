@@ -9,7 +9,7 @@
  * Return: Always 0
  */
 
-char *leet(char *e)
+char *leet(char *s)
 {
 	int stringCount, leetCount;
 	char leetLetters[] = "aAeEoOtTlL";
