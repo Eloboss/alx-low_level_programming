@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_buffer- Prints a buffer
- * @b: Prints a buffer
- * @size: contents size
+ * print_line- Print s bytes of buffer
+ * @c: Buffer to print
+ * @s: Bytes of buffer to print
+ * @l: Line of buffer to print
  */
 
-void print_buffer(char *b, int size)
+void print_line(char *c, int s, int l)
 {
-	int j, k;
+int j, k;
 for (j = 0; j <= 9; j++)
 {
 if (j <= s)
@@ -53,4 +54,3 @@ putchar('\n');
 if (size == 0)
 putchar('\n');
 }
-
