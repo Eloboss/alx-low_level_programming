@@ -14,43 +14,38 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *pim;
+	int i = 0, j = 0, k;
+	dog_t *doge;
 
-	int i;
-
-	pim = malloc(sizeof(dog_t));
-
-	if (pim == NULL)
+	while (name[i] != '\0')
+		i++;
+	while (owner[j] != '\0')
+		j++;
+	doge = malloc(sizeof(dog_t));
+	if (doge == NULL)
 	{
-		free(pim);
+		free(doge);
 		return (NULL);
 	}
-
-	pim->name = malloc(strlen(name) * sizeof(pim->name));
-
-	if (pim->name == NULL)
+	doge->name = malloc(i * sizeof(doge->name));
+	if (doge->name == NULL)
 	{
-		free(pim->name);
-		free(pim);
+		free(doge->name);
+		free(doge);
 		return (NULL);
 	}
-	for (i = 0; i <= strlen(name); i++)
-		pim->name[i] = name[i];
-
-	pim->owner = malloc(strlen(owner) * sizeof(pim->owner));
-
-	if (pim->owner == NULL)
+	for (k = 0; k <= i; k++)
+		doge->name[k] = name[k];
+	doge->age = age;
+	doge->owner = malloc(j * sizeof(doge->owner));
+	if (doge->owner == NULL)
 	{
-		free(pim->owner);
-		free(pim->name);
-		free(pim);
+		free(doge->owner);
+		free(doge->name);
+		free(doge);
 		return (NULL);
 	}
-	for (i = 0; i <= strlen(owner); i++)
-		pim->owner[i] = owner[i];
-
-	pim->age = age;
-
-	return (pim);
-
+	for (k = 0; k <= j; k++)
+		doge->owner[k] = owner[k];
+	return (doge);
 }
