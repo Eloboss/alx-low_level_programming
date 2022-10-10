@@ -14,11 +14,40 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *pim;
-	
-	pim = malloc(sizeof(char) * (strlen(name) + strlen(age) + 1);
-			if (p == NULL)
-			{
-			return (NULL);
-			}
-			return (p);
+
+	int i;
+
+	pim = malloc(sizeof(dog_t));
+
+	if (pim == NULL)
+	{
+		free(pim);
+		return (NULL);
+	}
+
+	pim->name = malloc(strlen(name) * sizeof(pim->name));
+
+	if (pim->name == NULL)
+	{
+		free(pim->name);
+		free(pim);
+		return (NULL);
+	}
+	for (i = 0; i <= strlen(name); i++)
+		pim->name[i] = name[i];
+
+	pim->owner = malloc(strlen(owner) * sizeof(pim->owner));
+
+	if (pim->owner == NULL)
+	{
+		free(pim->owner);
+		free(pim);
+		return (NULL);
+	}
+	for (i = 0; i <= strlen(owner); i++)
+		pim->owner[i] = owner[i];
+
+	pim->age = age;
+
+	return (pim);
 }
