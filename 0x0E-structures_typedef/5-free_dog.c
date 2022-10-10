@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stddef.h>
-#include <sttdlib.h>
+#include <stdlib.h>
 
 /**
  * free_dog- Fress dogs
