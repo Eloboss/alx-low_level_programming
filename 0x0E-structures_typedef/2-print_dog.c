@@ -6,8 +6,8 @@
 /**
  * print_dog- Prints a type of dog
  * @d: Dog identifier
- * Return: Always 0
- */
+ * Return: void
+  */
 
 void print_dog(struct dog *d)
 {
@@ -29,6 +29,4 @@ void print_dog(struct dog *d)
 		else
 		printf("Owner: %s\n", d->owner);
 	}
-	else if (!d)
-		return;
 }
