@@ -12,6 +12,6 @@ void print_name(char *name, void (*f)(char *))
 	{
 		f(name);
 	}
-	else
+	else if (!name || !f)
 		return;
 }
