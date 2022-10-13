@@ -6,6 +6,7 @@
  * print_name- Prints name
  * @name: Name to b printed
  * @f: Pointer to name
+ *
  * Return: Always 0
  */
 
