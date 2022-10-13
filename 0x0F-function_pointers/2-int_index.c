@@ -1,12 +1,12 @@
 #include "function_pointers.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * int_index- Searches for integer
  * @array: Array to b used
  * @size: Size of d array
  * @cmp: Pointer function that compares
+ *
  * Return: Always 0
  */
 
