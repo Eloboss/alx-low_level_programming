@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list elo;
 	unsigned int i;
-	chat *str;
+	char *str;
 
 	va_start(elo, n);
 
