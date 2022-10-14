@@ -4,8 +4,6 @@
  * print_numbers- Sperates integers
  * @separator: Seperator to b used
  * @n: Integers to b seperated
- *
- * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
