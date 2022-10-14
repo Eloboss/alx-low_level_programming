@@ -4,8 +4,6 @@
  * print_strings- Prints Strings
  * @separator: Seperator to b used
  * @n: Number of strings
- *
- * Return: void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
