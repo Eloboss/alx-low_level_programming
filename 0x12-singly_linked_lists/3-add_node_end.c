@@ -21,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[no])
 		no++;
 
-	new->len = no;
+	elo->len = no;
 	elo->next = NULL;
 	boss = *head;
 
