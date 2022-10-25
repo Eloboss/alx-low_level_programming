@@ -15,8 +15,7 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-
-	while (*head || head)
+	else
 	{
 		boss = (*head)->n;
 		elo = *head;
