@@ -22,6 +22,6 @@ int pop_listint(listint_t **head)
 		elo = *head;
 		*head = (*head)->next;
 		free(elo);
+		return (boss);
 	}
-	return (boss);
 }
