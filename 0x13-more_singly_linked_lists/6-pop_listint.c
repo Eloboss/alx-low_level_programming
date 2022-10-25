@@ -11,12 +11,12 @@ int pop_listint(listint_t **head)
 	listint_t *elo;
 	int boss;
 
-	if (!*head)
+	if (!head || !*head)
 	{
 		return (0);
 	}
 
-	while (*head)
+	while (*head || head)
 	{
 		boss = (*head)->n;
 		elo = *head;
