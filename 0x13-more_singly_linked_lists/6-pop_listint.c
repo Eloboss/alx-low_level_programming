@@ -9,6 +9,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *elo;
+	int boss;
 
 	if (!*head)
 	{
@@ -18,8 +19,8 @@ int pop_listint(listint_t **head)
 	while (*head)
 	{
 		elo = *head;
-		*head = (*head)->next;
 		boss = elo->n;
+		elo = (*head)->n;
 		free(elo);
 	}
 	return (boss);
