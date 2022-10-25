@@ -11,7 +11,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *elo;
 
-	elo = malloc(sizeof(listint_t);
+	elo = malloc(sizeof(listint_t));
 			if (elo)
 			{
 			elo->n = n;
