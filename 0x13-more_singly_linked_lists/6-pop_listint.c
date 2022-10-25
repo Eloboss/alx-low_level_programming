@@ -18,9 +18,9 @@ int pop_listint(listint_t **head)
 
 	while (*head)
 	{
+		boss = (*head)->n;
 		elo = *head;
-		boss = elo->n;
-		elo = (*head)->n;
+		*head = (*head)->next;
 		free(elo);
 	}
 	return (boss);
