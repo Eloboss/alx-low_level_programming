@@ -28,9 +28,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		boss = elo;
 		return (boss);
 	}
-	while (boss)
+	while (boss->next)
 	{
+	boss = boss->next;
 	boss->next = elo;
-	return (elo);
+	return (boss);
 	}
 }
