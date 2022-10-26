@@ -26,7 +26,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (boss == NULL)
 	{
 		boss = elo;
-		return (elo);
+		return (boss);
 	}
 	for ( ; boss != NULL; boss = boss->next)
 	{
