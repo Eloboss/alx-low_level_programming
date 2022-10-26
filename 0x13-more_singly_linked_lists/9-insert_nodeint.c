@@ -36,9 +36,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = elo;
 		return (elo);
 	}
-	for (i = 0; i < (idx - 1); i++)
+	while (i < (idx - 1))
 	{
-		*head = (*head)->next;
+		temp = temp->next;
+		i++;
 	}
 	elo->next = (*head)->next;
 	(*head)->next = elo;
