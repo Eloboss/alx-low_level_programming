@@ -12,10 +12,12 @@ int sum_listint(listint_t *head)
 
 	sum = 0;
 
-	if (head)
+	if (!head)
 	{
-	sum += head->n;
-	head = head->next;
+		return (0);
 	}
+	else
+		sum += head->n;
+	head = head->next;
 	return (sum);
 }
