@@ -13,15 +13,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *elo;
 
 	elo = malloc(sizeof(listint_t));
-	if (elo)
+	if (!elo)
 	{
-		elo->n = n;
-		elo->next = NULL;
-	}
-	else
 		return (NULL);
-	boss = *head;
+	}
+	elo->new = n;
+	elo->next = NULL;
 
+	boss = *head;
 	if (boss == NULL)
 	{
 		boss = elo;
