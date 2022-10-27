@@ -24,12 +24,12 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (boss == NULL)
 	{
 		boss = elo;
-		return (boss);
+		return (elo);
 	}
-	while (boss->next)
+	while (boss)
 	{
 		boss = boss->next;
+		boss->next = elo;
+		return (boss);
 	}
-	boss->next = elo;
-	return (boss);
 }
