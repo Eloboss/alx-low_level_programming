@@ -9,8 +9,8 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *boss;
-	listint_t *elo = *head;
+	listint_t *boss = *head;
+	listint_t *elo;
 
 	elo = malloc(sizeof(listint_t));
 	if (!elo)
