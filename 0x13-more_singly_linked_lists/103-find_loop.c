@@ -9,26 +9,26 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-		listint_t *boss = head;
-	listint_t *elo = head;
+		listint_t *slow = head;
+	listint_t *fast = head;
 
 	if (!head)
 		return (NULL);
 
-	while (boss && elo && elo->next)
+	while (slow && fast && fast->next)
 	{
-		boss = elo->next->next;
-		boss = boss->next;
+		fast = fast->next->next;
+		slow = slow->next;
 
-		if (elo == boss)
+		if (fast == slow)
 		{
-			boss = head;
-			while (boss != elo)
+			slow = head;
+			while (slow != fast)
 			{
-				boss = boss->next;
-				elo = elo->next;
+				slow = slow->next;
+				fast = fast->next;
 			}
-			return (elo);
+			return (fast);
 		}
 	}
 	return (NULL);
