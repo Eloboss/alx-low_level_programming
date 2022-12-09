@@ -12,7 +12,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *elo;
 	dlistint_t *h;
 
-	elo = malloc(sizeof(dlist_int));
+	elo = malloc(sizeof(dlistint_t));
 	if (elo == NULL)
 	{
 		return (NULL);
