@@ -5,6 +5,7 @@
  * @h: head of d list
  * @idx: position of d node
  * @n: length
+ * Return: Always 0
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
