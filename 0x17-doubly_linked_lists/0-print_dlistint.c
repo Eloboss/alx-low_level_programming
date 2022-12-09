@@ -9,13 +9,20 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	const dlistint_t *elo = h;
-	size_t count;
+	size_t count = 0;
+
+
+	if (elo == NULL)
+		return (count);
+
+	while (elo->prev != NULL)
+		elo = elo->prev;
 
 	while (elo != NULL)
 	{
-		elo = elo->next;
 		printf("elo->n\n");
 		count++;
+		elo = elo->next;
 	}
 	return (count);
 
