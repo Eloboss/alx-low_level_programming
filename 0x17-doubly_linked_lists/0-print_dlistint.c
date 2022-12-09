@@ -20,7 +20,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (elo != NULL)
 	{
-		printf("elo->n\n");
+		printf("%d\n", elo->n);
 		count++;
 		elo = elo->next;
 	}
