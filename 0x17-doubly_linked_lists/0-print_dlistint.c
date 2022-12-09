@@ -1,7 +1,7 @@
 #include "lists.h"
 
-/*
- * print_dlistint_t- print integers
+/**
+ * print_dlistint- print integer of d dlistint_t
  * @h: head of d list
  * Return: Always 0
  */
