@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint- Adds node in d list
- * @h: head of d list
+ * @head: head of d list
  * @n: position of node
  * Return: Always 0
  */
