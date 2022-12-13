@@ -1,6 +1,13 @@
-#include <string.h>
+#include <stdio.h>
+#include "main.h"
+/**
+ * main - to test if library worked
+ *
+ * Return: 0 if successfull else 1
+ */
+int main(void)
+{
+	printf("==> %d\n", _strlen("Eloboss"));
 
-size_t read(int fd, void *data, size_t size) {
-  strcpy(data, "I love cats");
-  return 12;
+	return (0);
 }
