@@ -7,8 +7,8 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #make d command executable each time
-.PHONY: all clean oclean fclean re
-
+.PHONY: all clean oclean fclean
+	
 #create makefiles
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
