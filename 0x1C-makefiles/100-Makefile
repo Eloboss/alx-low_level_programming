@@ -1,24 +1,22 @@
-#setting variables
 CC = gcc
-SRC = main.c school.c
+SRC = school.c main.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
+HEADER = m.h
+CFLAGS = -Werror -Wall -Wextra -pedantic
 
-#make d command executable each time
-.PHONY: all clean oclean fclean
-	
-#create makefiles
-all: m.h $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all: $(HEADER) clean $(NAME)
+
+$(NAME): $(OBJ)
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) $(NAME) *~
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) *.o
 
 fclean: clean oclean
 
-re: oclean all
+re: $(HEADER) oclean $(OBJ)
+
+.PHONY: clean oclean $(CC)
