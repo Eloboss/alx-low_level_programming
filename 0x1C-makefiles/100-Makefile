@@ -11,7 +11,7 @@ all: m.h $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 #make d command executable each time
-.PHONY: clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 clean:
 	$(RM) *~ $(NAME)
