@@ -7,7 +7,7 @@
  * @size: Number of nodes in the linked list
  * @value: The value to search for
  *
- * Return: Pointer 
+ * Return: Pointer
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
