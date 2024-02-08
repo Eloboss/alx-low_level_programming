@@ -1,9 +1,0 @@
-#setting variables
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-NAME = school
-
-#create make files
-all:$(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
